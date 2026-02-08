@@ -3,9 +3,8 @@ import { Bot } from "./deps.deno.ts";
 import { webhookCallback } from "./deps.deno.ts";
 import "jsr:@std/dotenv/load";
 
-const app = new Application(); // or whatever you're using
+const app = new Application(); 
 
-// Make sure to specify the framework you use.
 
 export const bot = new Bot(Deno.env.get("BOT_TOKEN") || "");
 
